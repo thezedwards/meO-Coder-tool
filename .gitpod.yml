@@ -1,0 +1,10 @@
+image:
+  file: Dockerfile
+  
+# Command to start on workspace startup (optional)
+tasks:
+  -  init: mkdir meomeo
+# Ports to expose on workspace startup (optional)
+ports:
+  - port: 8000
+    onOpen: open-preview
