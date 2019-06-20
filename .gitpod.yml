@@ -3,9 +3,6 @@ image:
   
 # Command to start on workspace startup (optional)
 tasks:
-  - command: >
-      chmod 777 gdrive &&
-      install gdrive /usr/local/bin/gdrive &
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
