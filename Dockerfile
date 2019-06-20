@@ -4,8 +4,8 @@ USER root
 
 # Install custom tools, runtime, etc.
 RUN sudo apt-get update \
-    && sudo apt-get install -y \
-    && sudo apt install -y cputool \
+    && sudo apt-get install software-properties-common \
+    && sudo add-apt-repository ppa:jonathonf/ffmpeg-4 \
     && sudo apt-get install -y ffmpeg \
     && sudo apt-get install -y bc \
     && wget https://raw.githubusercontent.com/circulosmeos/gdown.pl/master/gdown.pl \
