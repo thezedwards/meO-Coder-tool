@@ -3,16 +3,7 @@ image:
   
 # Command to start on workspace startup (optional)
 tasks:
-  -  init: mkdir meomeo &&
-  apt-get update && apt-get install -y &&
-  wget https://raw.githubusercontent.com/meocoder/Stream/master/gdrive &&
-  chmod 777 gdrive &&
-  sudo install gdrive /usr/local/bin/gdrive &&
-  sudo apt install - openssh-server &&
-  sudo systemctl status ssh &&
-  sudo /usr/sbin/update-rc.d ondemand disable &&
-  sudo apt install cpufrequtils &&
-  echo 'GOVERNOR="performance"' | sudo tee /etc/default/cpufrequtils
+  -  init: mkdir meomeo
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
