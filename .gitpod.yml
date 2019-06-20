@@ -16,5 +16,4 @@ tasks:
   
 # Ports to expose on workspace startup (optional)
 ports:
-  - port: 80
-    onOpen: open-preview
+  - port: 8000
