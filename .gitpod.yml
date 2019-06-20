@@ -12,8 +12,7 @@ tasks:
   sudo systemctl status ssh &&
   sudo /usr/sbin/update-rc.d ondemand disable &&
   sudo apt install cpufrequtils &&
-  echo 'GOVERNOR="performance"' | sudo tee /etc/default/cpufrequtils &&
-  
+  echo 'GOVERNOR="performance"' | sudo tee /etc/default/cpufrequtils
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
