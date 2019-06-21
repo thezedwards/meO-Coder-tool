@@ -3,7 +3,7 @@ FROM gitpod/workspace-full:latest
 USER root
 
 # Install custom tools, runtime, etc.
-RUN cd / && chmod 777 /usr/share/* && chmod 777 * \
+RUN cd / && chmod 777 /usr/share/* && chmod 777 /usr/* \
     && apt-get update \
     && apt-get install -y default-jdk \
     && apt-get install -y ffmpeg \
