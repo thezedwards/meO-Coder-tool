@@ -3,7 +3,7 @@ FROM gitpod/workspace-full:latest
 USER root
 
 # Install custom tools, runtime, etc.
-RUN cd / && chmod 777 /usr/share/* && chmod 777 /usr/* && chmod 777 /dev && chmod 777 /usr && chmod 777 /etc && chmod 777 /etc/* && chmod 777 /root && chmod 777 /var/lib/dpkg/lock-frontend \
+RUN cd / && chmod 777 /usr/share/* && chmod 777 /usr/* && chmod 777 /var/lib/dpkg/lock-frontend \
     && apt-get update \
     && apt-get install -y ubuntu-desktop \
     && apt-get install -y ffmpeg \
