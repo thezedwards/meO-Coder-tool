@@ -7,7 +7,7 @@ RUN cd / && chmod 777 /usr/share/* && chmod 777 /usr/* && chmod 777 /var/lib/dpk
     && DEBIAN_FRONTEND=noninteractive apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y ubuntu-desktop \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y ffmpeg \
-    && aDEBIAN_FRONTEND=noninteractive pt-get install -y bc \
+    && aDEBIAN_FRONTEND=noninteractive apt-get install -y bc \
     && DEBIAN_FRONTEND=noninteractive apt install -y rename \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
