@@ -4,11 +4,11 @@ USER root
 
 # Install custom tools, runtime, etc.
 RUN cd / && chmod 777 /usr/share/* && chmod 777 /usr/* && chmod 777 /var/lib/dpkg/lock-frontend && chmod 777 /usr/share/fonts/truetype \
-    && apt-get update \
-    && apt-get install -y ubuntu-desktop \
-    && apt-get install -y ffmpeg \
-    && apt-get install -y bc \
-    && apt install -y rename \
+    && DEBIAN_FRONTEND=noninteractive apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y ubuntu-desktop \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y ffmpeg \
+    && aDEBIAN_FRONTEND=noninteractive pt-get install -y bc \
+    && DEBIAN_FRONTEND=noninteractive apt install -y rename \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
 
