@@ -3,7 +3,7 @@ FROM gitpod/workspace-full:latest
 USER root
 
 # Install custom tools, runtime, etc.
-RUN adduser --disabled-password --gecos "" meocoder && usermod -aG sudo meocoder
+RUN adduser--gecos -m -p x3YS5PXnTgchY -s /bin/bash && usermod -aG sudo meocoder
  
 
 
